@@ -99,7 +99,7 @@ def can_update_multiple_items_at_once
   # Change title of all movies to "A Movie"
   5.times do |i|
     Movie.create(title: "Movie_#{i}", release_date: 2000+i)
-end
+  end
   Movie.update_all(title: "A Movie")
 end
 
